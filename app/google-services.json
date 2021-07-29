@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "80281120071",
+    "project_id": "summitapp-1d90d",
+    "storage_bucket": "summitapp-1d90d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80281120071:android:346f3e0cc207e51aa2f062",
+        "android_client_info": {
+          "package_name": "com.example.testapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80281120071-b000peo5oqv85a6vnmusevmbgf5pkh4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdu_J_FuJkLQv8KIc2_sBB1wESMKjN6t8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80281120071-b000peo5oqv85a6vnmusevmbgf5pkh4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
