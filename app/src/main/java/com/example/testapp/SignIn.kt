@@ -35,7 +35,7 @@ class SignIn : WearableActivity() {
         val currentUser = auth.currentUser
 
         if(currentUser != null){
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, OptionsList::class.java)
             startActivity(intent)
             finish()
         }

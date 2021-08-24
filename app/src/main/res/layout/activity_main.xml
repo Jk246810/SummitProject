@@ -21,7 +21,7 @@
             android:layout_height="45dp"
             android:layout_marginEnd="5dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:autofillHints=""
             android:ems="10"
             android:inputType="textPersonName"
@@ -36,7 +36,7 @@
             android:layout_height="45dp"
             android:layout_marginEnd="5dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="0dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:hint="@string/dosageText"
@@ -49,12 +49,29 @@
             android:layout_width="72dp"
             android:layout_height="35dp"
             android:layout_marginStart="52dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="0dp"
             android:onClick="sendClicked"
             android:text="@string/sendButton"
             android:textSize="10sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/dosage" />
+
+        <Button
+            android:id="@+id/backButton2"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:onClick="backButtonClicked"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="Back"
+            android:textSize="10sp"
+            android:gravity="left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.wear.widget.BoxInsetLayout>

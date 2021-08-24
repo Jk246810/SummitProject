@@ -8,6 +8,8 @@
         android:label="Summit App"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.DeviceDefault">
+        <activity android:name=".OptionsList"></activity>
+        <activity android:name=".StopRecording"/>
         <activity
             android:name=".SignIn"
             android:label="@string/title_activity_sign_in">
@@ -17,10 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity">
-        </activity>
-
+        <activity android:name=".MainActivity"/>
         <!--
                Set to true if your app is Standalone, that is, it does not require the handheld
                app to run.
@@ -28,19 +27,18 @@
                Notes * android:label was originally set to @string/app_name but changed to Summit App
                if there are issues with crashing change back *
         -->
-
         <meta-data
             android:name="com.google.android.wearable.standalone"
             android:value="true" />
+
         <uses-library
             android:name="com.google.android.wearable"
             android:required="true" />
-
-
     </application>
 
     <uses-feature android:name="android.hardware.type.watch" />
-
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
 
 </manifest>

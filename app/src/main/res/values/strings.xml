@@ -13,4 +13,5 @@
     <string name="passwordTextField">Password</string>
     <string name="signInButton">Sign In</string>
     <string name="createAccountButton">Create Account</string>
+    <string name="StopButton">Stop</string>
 </resources>
