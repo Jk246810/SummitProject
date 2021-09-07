@@ -66,14 +66,21 @@ class MainActivity : WearableActivity(){
             if (snapshot != null && snapshot.exists()) {
 
                 val device = snapshot.data
-                //.get("CtmReady")
+
                 Log.d("TAG", "Current data: ${device}")
                 if(device?.get("LostCTMConnectionField") == true){
                     sendNotification("Lost CTM Connection", "The CTM needs to be reconnected or charged")
+                    val intent = Intent(this, NotificationScreen::class.java)
+                    startActivity(intent)
+                    finish()
                 }
-                if(device?.get("LowINSBatteryField")== true){
+                else if(device?.get("LowINSBatteryField")== true){
                     sendNotification("INS Low Battery", "the INS must be charged immediately")
+                    val intent = Intent(this, NotificationScreen::class.java)
+                    startActivity(intent)
+                    finish()
                 }
+
             } else {
                 Toast.makeText(this, "data: null", Toast.LENGTH_LONG).show()
             }
